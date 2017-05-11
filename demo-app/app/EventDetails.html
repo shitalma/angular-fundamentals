@@ -23,7 +23,9 @@
         </div>
     </div>
 
-    <div ng-controller="EventController">
+    <div ng-controller="EventController" style="padding-left: 20px; padding-right: 20px">
+        <img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
+
         <div class="row">
             <div class="span11">
                 <h2>{{event.name}}</h2>
@@ -45,6 +47,18 @@
             </div>
         </div>
 
+        <hr />
+
+        <h3>Sessions</h3>
+        <ul class="thumbnails">
+            <li ng-repeat="session in event.sessions">
+                <div class="row session">
+                    <div class="span9 well">
+                        <h4 class="well-title">{{session.name}}</h4>
+                    </div>
+                </div>
+            </li>
+        </ul>
     </div>
 </div>
 

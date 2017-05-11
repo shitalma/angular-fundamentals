@@ -9,7 +9,20 @@ eventsApp.controller('EventController',
             location: {
                 address: 'Pune',
                 city: 'Pune'
-            }
+            },
+
+            imageUrl: './img/angularjs-logo.png',
+            sessions: [
+                {
+                    name: 'Session 1'
+                },
+                {
+                    name: 'session 2'
+                },
+                {
+                    name: 'session 3'
+                }
+            ]
         }
     }
 );
