@@ -14,15 +14,26 @@ eventsApp.controller('EventController',
             imageUrl: './img/angularjs-logo.png',
             sessions: [
                 {
-                    name: 'Session 1'
+                    name: 'Session 1',
+                    upVoteCount: 0
                 },
                 {
-                    name: 'session 2'
+                    name: 'session 2',
+                    upVoteCount: 0
                 },
                 {
-                    name: 'session 3'
+                    name: 'session 3',
+                    upVoteCount: 0
                 }
             ]
+        };
+
+        $scope.upVoteSession = function (session) {
+            session.upVoteCount++;
+        };
+
+        $scope.downVoteSession = function (session) {
+            session.upVoteCount--;
         }
     }
 );
