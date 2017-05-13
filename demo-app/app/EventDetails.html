@@ -32,6 +32,13 @@
             </div>
         </div>
 
+        <h2 ng-show="boolVal">Show this</h2>
+        <h2 ng-hide="boolVal">Hide this</h2>
+
+        <div ng-bind-html="snippet">Some title</div>
+
+        <div ng-bind-html-unsafe="snippet" class="ng-binding">Some title</div>
+
         <div class="row">
             <div class="span3">
                <div><strong>Date: </strong>{{event.date}}</div>
